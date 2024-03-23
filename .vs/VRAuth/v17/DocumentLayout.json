@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB583236-6191-9FE4-C1E3-B17271E26D3B}|Assembly-CSharp.csproj|C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\assets\\simplelowpolynature\\shaders\\simplewater.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{CB583236-6191-9FE4-C1E3-B17271E26D3B}|Assembly-CSharp.csproj|solutionrelative:assets\\simplelowpolynature\\shaders\\simplewater.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.10\\Runtime\\UniversalRenderPipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.10\\Runtime\\UniversalRenderPipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UniversalRenderPipeline.cs",
+              "DocumentMoniker": "C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.10\\Runtime\\UniversalRenderPipeline.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.10\\Runtime\\UniversalRenderPipeline.cs",
+              "ToolTip": "C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.10\\Runtime\\UniversalRenderPipeline.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.10\\Runtime\\UniversalRenderPipeline.cs",
+              "ViewState": "AQIAAI8CAAAAAAAAAAAowJoCAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T18:28:13.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleWater.shader",
+              "DocumentMoniker": "C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\Assets\\SimpleLowPolyNature\\Shaders\\SimpleWater.shader",
+              "RelativeDocumentMoniker": "Assets\\SimpleLowPolyNature\\Shaders\\SimpleWater.shader",
+              "ToolTip": "C:\\Users\\Sharon Tran\\Downloads\\VRAuth\\Assets\\SimpleLowPolyNature\\Shaders\\SimpleWater.shader",
+              "RelativeToolTip": "Assets\\SimpleLowPolyNature\\Shaders\\SimpleWater.shader",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-03-23T18:29:24.992Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
