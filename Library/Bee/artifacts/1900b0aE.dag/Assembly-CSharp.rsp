@@ -394,6 +394,7 @@
 "Assets/Quirky Series Ultimate/_Scripts/QuirkySeriesDemo.cs"
 "Assets/Quirky Series Ultimate/_Scripts/RotateOnScroll.cs"
 "Assets/Scripts/AnimateHandOnInput.cs"
+"Assets/Scripts/OverallAverage.cs"
 "Assets/Scripts/RaycastExample.cs"
 "Assets/Scripts/RaycastTest.cs"
 "Assets/Scripts/RayInteractorUIHit.cs"
