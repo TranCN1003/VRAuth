@@ -1,18 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class OverallAverage : MonoBehaviour
 {
     public RayInteractorUIHit[] TraceStats = new RayInteractorUIHit[4]; // Array to store references to RayInteractorUIHit instances
+    public RayInteractorUIHit Mazestats; //maze page stat ref
+
+    public GameObject mazePage; // Reference to the maze UI page
+    public GameObject winPage; // Reference to the win UI page
+    public GameObject losePage; // Reference to the lose UI page
 
     private List<float> speeds = new List<float>(); // stores speed values
     private List<float> accelerations = new List<float>(); // stores acceleration values
     private List<float> jerks = new List<float>(); // stores jerk values
 
+    //final stats
     private float Fspeed = 0f;
     private float Facceleration = 0f;
     private float Fjerk = 0f;
+
+    //maze stats
+    private float Mspeed = 0f;
+    private float Macceleration = 0f;
+    private float Mjerk = 0f;
+
+    //final stats
+    private float speedDif = 0f;
+    private float accelerationDif = 0f;
+    private float jerkDif = 0f;
 
     public void MainAvg()
     {
@@ -31,6 +48,14 @@ public class OverallAverage : MonoBehaviour
         Fspeed = CalculateAverageSpeed();
         Facceleration = CalculateAverageAcceleration();
         Fjerk = CalculateAverageJerk();
+
+        Mspeed = Mazestats.CalculateAverageSpeed();
+        Macceleration = Mazestats.CalculateAverageAcceleration();
+        Mjerk = Mazestats.CalculateAverageJerk();
+        
+        speedDif = (Math.Abs(Fspeed - Mspeed)/((Fspeed + Mspeed)/2))* 100;
+        accelerationDif = (Math.Abs(Facceleration - Macceleration)/((Facceleration + Macceleration)/2))* 100;
+        jerkDif = (Math.Abs(Fjerk - Mjerk)/((Fjerk + Mjerk)/2))* 100;
         
     }
 
@@ -75,6 +100,23 @@ public class OverallAverage : MonoBehaviour
 
     public void DisplayFStats()
     {
+        MainAvg();
         Debug.Log("final stats are: "+ Fspeed + " ," + Facceleration + " , " + Fjerk);
+        Debug.Log("maze stats are: "+ Mspeed + " ," + Macceleration + " , " + Mjerk);
+        Debug.Log("Speed, acceleration and jerk diff Percentages are " + speedDif + " ," + accelerationDif + " ," + jerkDif );
+    }
+
+    public void Authenticate()
+    {
+        
+
+        if (speedDif <50 && accelerationDif < 50 && jerkDif < 50)
+        {
+            winPage.SetActive(true);
+        }
+        else
+        {
+            losePage.SetActive(true);
+        }
     }
 }

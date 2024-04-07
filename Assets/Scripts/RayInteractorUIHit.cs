@@ -85,6 +85,20 @@ public class RayInteractorUIHit : MonoBehaviour
                 {
                     
                     hitPoints.Add(hit.point);
+
+                    Vector3 velocity = (hit.point - lastPosition) / deltaTime;
+                    float speed = velocity.magnitude;
+                    float acceleration = speed / deltaTime;
+
+                    float lastAcceleration = (accelerations.Count > 0) ? accelerations[accelerations.Count - 1] : 0f;
+                    float jerk = (acceleration - lastAcceleration) / deltaTime;
+
+                    speeds.Add(speed);
+                    accelerations.Add(acceleration);
+                    jerks.Add(jerk);
+
+                    lastPosition = hit.point;
+                    lastTime = currentTime;
                     
                     
 

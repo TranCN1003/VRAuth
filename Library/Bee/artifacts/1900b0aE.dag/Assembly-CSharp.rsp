@@ -398,6 +398,7 @@
 "Assets/Scripts/RaycastExample.cs"
 "Assets/Scripts/RaycastTest.cs"
 "Assets/Scripts/RayInteractorUIHit.cs"
+"Assets/Scripts/Timer.cs"
 "Assets/Scripts/TraceScript.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
