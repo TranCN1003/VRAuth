@@ -7,18 +7,30 @@ public class Timer : MonoBehaviour
 {
     public GameObject nextPage; // Reference to the next UI page
     public GameObject thisPage; // Reference to the current UI page
-    public TextMeshProUGUI textBox;  //Reference to text box to update
+    public TextMeshProUGUI textBox;  // Reference to text box to update
     public float displayTime = 5f; // Time in seconds to display this page
     public float appendInterval = 1f;
 
     private float timer = 0f;
+    private Coroutine appendCoroutine;
 
-    private void Start()
+    private void OnEnable()
     {
-        
-        StartCoroutine(AppendTextRoutine());
+        // Start the coroutine when the GameObject is enabled
+        appendCoroutine = StartCoroutine(AppendTextRoutine());
     }
-    private System.Collections.IEnumerator AppendTextRoutine()
+
+    private void OnDisable()
+    {
+        // Stop the coroutine when the GameObject is disabled
+        if (appendCoroutine != null)
+        {
+            StopCoroutine(appendCoroutine);
+            appendCoroutine = null;
+        }
+    }
+
+    private IEnumerator AppendTextRoutine()
     {
         while (true)
         {
@@ -28,8 +40,8 @@ public class Timer : MonoBehaviour
             // Wait for the specified interval before appending again
             yield return new WaitForSeconds(appendInterval);
         }
-        
     }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -37,14 +49,13 @@ public class Timer : MonoBehaviour
         // Check if it's time to switch to the next page
         if (timer >= displayTime)
         {
-            
-            // Activate the next page and deactivate this page
+            // Reset timer and text box content
             timer = 0f;
+            textBox.text = "";
+
+            // Activate the next page and deactivate this page
             thisPage.SetActive(false);
             nextPage.SetActive(true);
-
-            
         }
     }
 }
-
