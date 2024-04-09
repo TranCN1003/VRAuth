@@ -62,9 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\TraceScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\RotateOnScroll.cs" />
     <Compile Include="Assets\Scripts\AnimateHandOnInput.cs" />
     <Compile Include="Assets\Scripts\RaycastExample.cs" />
+    <Compile Include="Assets\Scripts\OverallAverage.cs" />
     <Compile Include="Assets\Quirky Series Ultimate\_Scripts\QuirkySeriesDemo.cs" />
     <Compile Include="Assets\Scripts\RaycastTest.cs" />
     <Compile Include="Assets\Scripts\RayInteractorUIHit.cs" />
